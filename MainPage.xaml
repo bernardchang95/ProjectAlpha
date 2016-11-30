@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="ProjectAlpha.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjectAlpha"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="PageLoaded">
+    <Grid Background="DarkBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="0.25*"/>
+        </Grid.RowDefinitions>
+        <Image Name="ResultImage" Width="200" Height="200" HorizontalAlignment="Center"/>
+        <StackPanel VerticalAlignment="Center" Grid.Row="1">
+            <TextBlock Name="TempTextBlock" FontSize="36" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Name="DescriptionTextBlock" FontSize="36" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Name="LocationTextBlock" FontSize="36" Foreground="White" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+        </StackPanel>
+        <Button Grid.Row="2" Content="Update" Foreground="White" HorizontalAlignment="Center" FontSize="30" Click="Button_Click"/>
+    </Grid>
+</Page>
